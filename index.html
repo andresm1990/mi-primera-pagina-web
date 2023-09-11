@@ -1,97 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio de El Viejo Olivo</title>
-    <style>
-        /* Estilos CSS personalizados aquí */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #cbcfcf;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-image: url('Dpto1.jpeg'); /* Reemplaza 'ruta_de_tu_imagen.jpg' con la ruta real de tu imagen */
-    background-size: auto; /* Hace que la imagen de fondo cubra completamente el encabezado */
-    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
-    background-position: center; /* Centra la imagen de fondo en el encabezado */
-    color: #fff;
-    text-align: center;
-    margin: 0; /* Agrega un margen para crear espacio alrededor del encabezado */
-    padding: 0; /* Elimina cualquier relleno en el encabezado */
-}
-
-
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #684505fd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    font-size: 24px;
-    color: #ffffff;
-}
-
-p {
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-/* Cambia el color de fondo y el color del texto de los encabezados */
-h2 {
-    background-color: #d6b876; /* Verde principal */
-    color: #fff;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-/* Cambia el color de las viñetas de la lista */
-ul {
-    list-style-type: square;
-    margin-left: 20px;
-}
-
-/* Cambia el color de los enlaces */
-a {
-    color: #009688; /* Verde principal */
-    text-decoration: none;
-}
-
-/* Cambia el color de los enlaces cuando se les pasa el ratón por encima */
-a:hover {
-    text-decoration: underline;
-}
-
-    </style>
+    <link rel="stylesheet" href="assets/css/Styles.css">
 </head>
+
 <body>
-    <header>
-        <h1>El Viejo Olivo - Portafolio de Alojamiento Turístico</h1>
-    </header>
-    <div class="container">
+    <ul id="menu">
+        <li><a href="#encabezado">Menu Principal</a></li>
+        <li><a href="#seccion1">Acerca de Nosotros</a></li>
+        <li><a href="#seccion2">Nuestros Servicios</a></li>
+        <li><a href="#seccion3">Fotos</a></li>
+        <li><a href="#seccion4">Contactos</a></li>
+        <!-- Agrega más enlaces para cada sección -->
+    </ul>
+    <section id="encabezado">
+        <h1>El Viejo Olivo - Monoambiente - Apartment </h1>
+        <img src="Imagenes/Dpto1.jpeg" alt="Foto encabezado">
+    </section>
+        
+    <section id="seccion1">
         <h2>Acerca de Nosotros</h2>
         <p>Bienvenidos a "El Viejo Olivo" en Villa Unión del Talampaya. Somos tu destino para una experiencia de alojamiento excepcional en este rincón encantador de la región. En nuestro pequeño paraíso, ofrecemos dos apartamentos únicos diseñados para que te sientas como en casa, incluso cuando estás lejos de casa.</p>
+    </section>
 
+     <section id="seccion2">   
         <h2>Nuestros Servicios</h2>
         <ul>
-            <li>Alojamiento de calidad en dos apartamentos únicos.</li>
+            <li>Opciones flexibles de reserva para adaptarse a tus planes de viaje.</li>
             <li>Ubicación escénica en el corazón de Villa Unión del Talampaya.</li>
+            <li>Recomendaciones locales para una experiencia auténtica.</li>
+            <li>Alojamiento de calidad en dos apartamentos únicos.</li>
             <li>Atención personalizada y hospitalidad genuina.</li>
             <li>Mantenimiento impecable y limpieza regular.</li>
-            <li>Recomendaciones locales para una experiencia auténtica.</li>
-            <li>Opciones flexibles de reserva para adaptarse a tus planes de viaje.</li>
         </ul>
+    </section>
+    <section id="seccion3">
+        <link rel="stylesheet" href="assets/css/stylefotos.css">
+        <h2>Fotos</h2>
+        <div class="seccion-fotos">
+            <img class="foto-miniatura" src="Imagenes/Dpto1.jpeg" alt="Foto 1">
+            <img class="foto-miniatura" src="Imagenes/Dpto2.jpeg" alt="Foto 2">
+            <img class="foto-miniatura" src="Imagenes/Dpto6.jpeg" alt="Foto 3">
+            <img class="foto-miniatura" src="Imagenes/Dpto4.jpeg" alt="Foto 4">
+            <img class="foto-miniatura" src="Imagenes/Dpto5.jpeg" alt="Foto 5">
+            <img class="foto-miniatura" src="Imagenes/Dpto3.jpeg" alt="Foto 6">
+            <img class="foto-miniatura" src="Imagenes/Dpto7.jpeg" alt="Foto 7">
+            <img class="foto-miniatura" src="Imagenes/Dpto8.jpeg" alt="Foto 8">
+            <img class="foto-miniatura" src="Imagenes/Dpto9.jpeg" alt="Foto 9">
+            <!-- Agrega más miniaturas de imágenes según sea necesario -->
+        </div>
+        <!-- Vista de imagen grande -->
+    <div id="vista-imagen">
+        <img id="imagen-grande" src="" alt="Imagen grande">
+    </div>
 
+    <script src="assets/js/main.js"></script>
+    </section>
+
+    <section id="seccion4">
         <h2>Contacto</h2>
         <p>¡Esperamos darte la bienvenida en "El Viejo Olivo" y ayudarte a crear recuerdos inolvidables en esta hermosa región!</p>
-        <p>Para más información y reservas, contáctanos en: [Tu dirección de correo electrónico] o [Tu número de teléfono].</p>
-    </div>
+        <p>Para más información y reservas, contáctanos en: elviejoolivovu@gmail.com o +54 9 3825 452603.</p>
+        <!-- Enlaces a redes sociales -->
+            <section> 
+                <a href="https://instagram.com/cafelaparroquiavu" target="_blank">
+                <img src="Imagenes/instagram.png" alt="instagram">
+
+                <a href="https://instagram.com/cafelaparroquiavu" target="_blank">
+                <img src="Imagenes/facebook.png" alt="facebook">
+
+                <a href="https://instagram.com/cafelaparroquiavu" target="_blank">
+                <img src="Imagenes/whatsapp.png" alt="whatsapp">
+
+                <a href="https://goo.gl/maps/Lt6uUJ15HsZK5mY86" target="_blank">
+                <img src="Imagenes/google-maps.png" alt="google maps">
+                </a>
+                <!-- Agrega más enlaces a otras redes sociales según sea necesario -->
+            </section>
+        </section>    
 </body>
 </html>
+
