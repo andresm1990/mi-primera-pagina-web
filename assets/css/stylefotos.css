@@ -1,0 +1,43 @@
+.seccion-fotos {
+    display:inline-flexbox;
+    grid-template-columns: repeat(3, 1fr); /* Matriz de 3 columnas */
+    gap: 20px; /* Espacio entre las imágenes */
+    text-align: center;
+}
+
+/* Estilos para las imágenes miniatura */
+.foto-miniatura {
+    width: 100px; 
+    height: 100px;
+    cursor: pointer;
+    transition: transform 0.3s; /* Agrega una transición suave */
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px;
+}
+
+/* Aplicar una transformación de escala al pasar el ratón sobre la imagen */
+.foto-miniatura:hover {
+    transform: scale(1.5); /* Ampliar la imagen al 120% del tamaño original */
+}
+
+/* Estilos para la vista de imagen grande */
+#vista-imagen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+#imagen-grande {
+    max-width: 80%;
+    max-height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
